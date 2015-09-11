@@ -21,7 +21,7 @@ class Config
         ob_start();
 
         //site address
-        define('DIR', 'http://http://agriextention-phuccom.rhcloud.com/');
+        define('DIR', 'http://agriextention-phuccom.rhcloud.com/');
 
         //set default controller and method for legacy calls
         define('DEFAULT_CONTROLLER', 'welcome');
