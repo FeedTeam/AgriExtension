@@ -21,7 +21,7 @@ class Config
         ob_start();
 
         //site address
-        define('DIR', 'http://localhost/');
+        define('DIR', 'http://http://agriextention-phuccom.rhcloud.com/');
 
         //set default controller and method for legacy calls
         define('DEFAULT_CONTROLLER', 'welcome');
@@ -35,10 +35,11 @@ class Config
 
         //database details ONLY NEEDED IF USING A DATABASE
         define('DB_TYPE', 'mysql');
-        define('DB_HOST', 'localhost');
-        define('DB_NAME', 'tmapp');
-        define('DB_USER', 'root');
-        define('DB_PASS', '');
+        define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+        define('DB_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT'));
+        define('DB_NAME', getenv('OPENSHIFT_GEAR_NAME'));
+        define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+        define('DB_PASS', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
         define('PREFIX', 'smvc_');
 
         //set prefix for sessions
