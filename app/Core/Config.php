@@ -35,7 +35,7 @@ class Config
 
         //database details ONLY NEEDED IF USING A DATABASE
         define('DB_TYPE', 'mysql');
-        define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+        define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST') . ':' . getenv('OPENSHIFT_MYSQL_DB_PORT'));
         define('DB_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT'));
         define('DB_NAME', getenv('OPENSHIFT_GEAR_NAME'));
         define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
