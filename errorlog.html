@@ -1,0 +1,25 @@
+<h3>Exception information:</h3>
+
+           <p><strong>Date:</strong> Sep 11, 2015 13:22PM</p>
+
+           <p><strong>Message:</strong> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens</p>
+
+           <p><strong>Code:</strong> HY093</p>
+
+           <p><strong>File:</strong> C:\wamp\www\TestBackend\app\Helpers\Database.php</p>
+
+           <p><strong>Line:</strong> 100</p>
+
+           <h3>Stack trace:</h3>
+
+           <pre>#0 C:\wamp\www\TestBackend\app\Helpers\Database.php(100): PDOStatement->execute()
+#1 C:\wamp\www\TestBackend\app\Models\User.php(35): Helpers\Database->select('select * from `...', Array)
+#2 C:\wamp\www\TestBackend\app\Controllers\LoginController.php(26): Models\User::getUser('Fuck', '123')
+#3 [internal function]: Controllers\LoginController->login()
+#4 C:\wamp\www\TestBackend\app\Core\Router.php(89): call_user_func_array(Array, Array)
+#5 C:\wamp\www\TestBackend\app\Core\Router.php(212): Core\Router::invokeObject('Controllers\\Log...', Array)
+#6 C:\wamp\www\TestBackend\index.php(83): Core\Router::dispatch()
+#7 {main}</pre>
+
+           <hr />
+<p>Error on Sep 10, 2015 14:20PM - require(app/views/login/form_login.php): failed to open stream: No such file or directory in C:\wamp\www\TestBackend\app\Core\View.php on line 32</p><p>Error on Sep 10, 2015 14:19PM - require(app/templates/MetroTemplate/MetroTemplate/header.php): failed to open stream: No such file or directory in C:\wamp\www\TestBackend\app\Core\View.php on line 68</p><p>Error on Sep 10, 2015 13:09PM - require(app/templates/default/MetroTemplate/header.php): failed to open stream: No such file or directory in C:\wamp\www\TestBackend\app\Core\View.php on line 66</p>
