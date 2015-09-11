@@ -84,4 +84,3 @@ Router::$fallback = false;
 
 //execute matched routes
 Router::dispatch();
->>>>>>> init
