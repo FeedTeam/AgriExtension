@@ -1,6 +1,6 @@
 # Chung ta xe lam viec voi Project nay
 
-## O ben duong la huong dan  tao moy project tuong tu
+## O ben duong la huong dan  tao mot project tuong tu
 
 ![Simple MVC Framework](http://simplemvcframework.com/app/templates/smvc/img/logo.png)
 
