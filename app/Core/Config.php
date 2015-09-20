@@ -21,7 +21,7 @@ class Config
         ob_start();
 
         //site address
-        define('DIR', 'http://agriextention-phuccom.rhcloud.com/');
+        define('DIR', getenv('OPENSHIFT_ADDR'));
 
         //set default controller and method for legacy calls
         define('DEFAULT_CONTROLLER', 'welcome');

@@ -30,9 +30,13 @@ use Helpers\Database;
 
      public static function getUser(string $user_name, string $pw){
          $db = Database::get();
+
          $result  = $db->select("select * from `user` WHERE user_name = :un",
              array(':un' => $user_name));
-         return $result;
+         if(count($result) != 1)
+             return null;
+         else
+             return $result[0];
      }
  }
 ?>

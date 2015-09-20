@@ -23,3 +23,5 @@ use Core\Language;
 <a class="btn btn-md btn-success" href="<?php echo DIR;?>admin">
     admin
 </a>
+
+<p><?php var_dump($_SERVER[HTTP_USER_AGENT]) ?></p>

@@ -71,6 +71,7 @@ Router::any('hello', 'Controllers\Hello@index');
 Router::any('login','Controllers\LoginController@login');
 Router::any('admin', 'Controllers\AdminController@index');
 Router::any('portal', 'Controllers\NewPortalController@index');
+Router::post('logout', 'Controllers\LogoutController@logout');
 
 //module routes
 $hooks = Hooks::get();
